@@ -1,0 +1,19 @@
+﻿
+$body-color:#bbfa03;
+body {
+    .bio {
+        .test {
+            color: blue;
+        }
+    }
+
+    .byo {
+        .test {
+            color: red;
+        }
+    }
+
+    & {
+        background-color:$body-color;
+    }
+}
