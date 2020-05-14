@@ -1,19 +1,139 @@
-﻿
-$body-color:#bbfa03;
-body {
-    .bio {
-        .test {
-            color: blue;
+﻿$myblue: rgb(4, 146, 228);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+input:focus,
+select:focus,
+button:focus {
+    outline: none;
+}
+/* ------------------------------------
+-----------MODAL-SECTION-------------
+----------------------------------- */
+.my-btn {
+    background-color: #08c3fc;
+    color: rgb(253, 253, 253);
+    padding: 10px 20px;
+}
+
+.my-btn:hover {
+    background-color: #08c3fc;
+    color: rgb(50, 92, 92);
+    outline: none;
+}
+
+.modal {
+    width: 600px;
+    margin: 0 auto;
+    top: 20px;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    animation: animatefromTop 0.5s;
+
+    @keyframes animatefromTop {
+        from {
+            top: -300px;
+            opacity: 0;
+        }
+
+        to {
+            top: 0;
+            opacity: 1;
+        }
+    }
+    // opacity: 0;
+    // transform: translate(0% , -50%);
+    .modal-header {
+        border: none;
+
+        h2 {
+            text-transform: uppercase;
+            font-size: 170%;
+            font-weight: 500;
+            padding-left: 20px;
         }
     }
 
-    .byo {
-        .test {
-            color: red;
+    .modal-body {
+        .nav-tabs {
+            li {
+                a {
+                    color: $myblue;
+                }
+            }
         }
-    }
 
-    & {
-        background-color:$body-color;
+        .nav-tabs {
+            li.active {
+                a {
+                    color: rgb(1, 64, 94);
+                }
+            }
+        }
+
+        .tab-content {
+            position: relative;
+
+            .container-fluid {
+                margin: 30px 0 10px -10px;
+            }
+
+            .user-info {
+                text-align: right;
+                padding: 24px 0;
+
+                p {
+                    margin: 0;
+                }
+            }
+
+            input {
+                height: 50px;
+                width: 250px;
+                margin: 10px;
+                border: 1px solid rgba(112, 111, 111,.4);
+                border-radius: 8px;
+                transition: all .5s;
+            }
+
+            input:focus {
+                border: 1px solid rgb(5, 194, 228);
+                border-radius: 8px;
+            }
+
+            input[type=text], input[type=password], input[type=email] {
+                padding-left: 10px;
+                color: rgba(51, 51, 51, .7);
+                letter-spacing: 1px;
+                font-size: 90%;
+            }
+
+            input[type=checkbox] {
+                height: 15px;
+                width: 15px;
+                display: inline-block;
+                margin: 5px;
+                margin-bottom: 0px;
+            }
+
+            label {
+                margin: 0;
+                line-height: 31px;
+            }
+        }
+
+        .modal-footer {
+            border: none;
+            margin-top: 10px;
+        }
     }
 }
