@@ -30,9 +30,7 @@ button:focus {
 }
 
 .modal {
-    width: 600px;
-    margin: 0 auto;
-    top: 20px;
+    background: rgba(0, 0, 23, 0.3);
     display: none;
     position: fixed;
     z-index: 1;
@@ -50,6 +48,12 @@ button:focus {
             opacity: 1;
         }
     }
+
+    .modal-content {
+        width: 600px;
+        margin: auto;
+        top: 30%;
+    }
     // opacity: 0;
     // transform: translate(0% , -50%);
     .modal-header {
@@ -64,6 +68,8 @@ button:focus {
     }
 
     .modal-body {
+
+
         .nav-tabs {
             li {
                 a {

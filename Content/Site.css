@@ -25,9 +25,7 @@ button:focus {
   outline: none; }
 
 .modal {
-  width: 600px;
-  margin: 0 auto;
-  top: 20px;
+  background: rgba(0, 0, 23, 0.3);
   display: none;
   position: fixed;
   z-index: 1;
@@ -41,6 +39,10 @@ button:focus {
   to {
     top: 0;
     opacity: 1; } }
+  .modal .modal-content {
+    width: 600px;
+    margin: auto;
+    top: 30%; }
   .modal .modal-header {
     border: none; }
     .modal .modal-header h2 {
