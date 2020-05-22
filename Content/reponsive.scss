@@ -1,0 +1,46 @@
+﻿@media only screen and (max-width: 768px) {
+
+    /*#region HOME.LOGIN-REPONSIVE */
+    .login-container {
+        height: auto;
+
+        .navbar-default {
+            .navbar-brand {
+                margin-left: 50px;
+            }
+        }
+
+        .school-content {
+            margin-top: 0;
+            font-family: 'Quicksand', sans-serif !important;
+            display: inline-block;
+            color: #fff;
+            text-transform: uppercase;
+
+            h3 {
+                font-size: 25px;
+                font-weight: 700;
+            }
+
+            h1 {
+                font-size: 50px;
+                font-weight: 500;
+            }
+
+            .sub-h1 {
+                font-size: 25px;
+                padding-left: 45%;
+            }
+        }
+
+        #loginForm {
+            margin-top: 0;
+            margin-bottom: 5%;
+
+            .btn-link {
+                margin-left: 70%;
+            }
+        }
+        /*#endregion */
+    }
+}
