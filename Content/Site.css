@@ -1,8 +1,149 @@
-﻿body .bio .test {
-  color: blue; }
+﻿@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box; }
 
-body .byo .test {
-  color: red; }
+/*#region HOME.LOGIN VIEW */
+.login-container {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 16px;
+  color: #333;
+  background-image: linear-gradient(88.7deg, rgba(144, 254, 229, 0.5) -17.1%, rgba(91, 193, 239, 0.5) 30.4%, rgba(119, 94, 173, 0.5) 130.3%), url("images/bg.jpg");
+  height: 100vh;
+  backdrop-filter: brightness(0.75);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  padding-top: 5%; }
+  .login-container .navbar-default {
+    height: 200px;
+    background-color: transparent !important;
+    border-color: transparent !important; }
+    .login-container .navbar-default .navbar-brand {
+      height: 190px;
+      width: auto;
+      margin-left: 100px; }
+    .login-container .navbar-default .navbar-nav, .login-container .navbar-default .nav-default {
+      float: right;
+      margin-right: 100px; }
+      .login-container .navbar-default .navbar-nav li, .login-container .navbar-default .nav-default li {
+        margin-top: 75px;
+        margin-right: 20px; }
+        .login-container .navbar-default .navbar-nav li a, .login-container .navbar-default .nav-default li a {
+          color: #fff;
+          transition: all .3s;
+          font-weight: 500;
+          font-size: 120%; }
+          .login-container .navbar-default .navbar-nav li a:hover, .login-container .navbar-default .nav-default li a:hover {
+            color: #fff;
+            transform: scale(1.1); }
+        .login-container .navbar-default .navbar-nav li::after, .login-container .navbar-default .nav-default li::after {
+          height: 2px;
+          content: " ";
+          display: block;
+          background-color: rgba(245, 236, 236, 0.7);
+          width: 0%;
+          transition: all .3s; }
+        .login-container .navbar-default .navbar-nav li:hover::after, .login-container .navbar-default .nav-default li:hover::after {
+          width: 110%; }
+  .login-container .school-content {
+    font-family: 'Quicksand', sans-serif !important;
+    display: inline-block;
+    padding: 50px;
+    width: 100%;
+    text-align: center;
+    margin-top: 18%;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 40px; }
+    .login-container .school-content h3 {
+      text-align: left;
+      font-size: 30px;
+      font-weight: 700; }
+    .login-container .school-content h1 {
+      font-size: 70px;
+      font-weight: 500; }
+    .login-container .school-content .sub-h1 {
+      font-size: 30px;
+      padding-left: 45%; }
+  .login-container #loginForm {
+    width: 100%;
+    padding: 20px;
+    margin-top: 15%;
+    background-color: rgba(76, 96, 97, 0.397);
+    padding: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #fff;
+    border-radius: 10px; }
+    .login-container #loginForm h3 {
+      text-transform: uppercase;
+      font-size: 200%;
+      margin-bottom: 40px;
+      margin-left: 20px;
+      font-weight: 700; }
+    .login-container #loginForm label {
+      font-weight: 400; }
+    .login-container #loginForm input {
+      height: 40px;
+      background-color: transparent; }
+    .login-container #loginForm input:focus {
+      color: #fff; }
+    .login-container #loginForm .form-control:focus {
+      border-color: #e8eef3;
+      outline: 0;
+      box-shadow: inset 0 1px 1px rgba(240, 240, 240, 0.075), 0 0 10px rgba(243, 243, 243, 0.6); }
+    .login-container #loginForm .btn {
+      border: none;
+      height: 40px;
+      transition: all .3s; }
+    .login-container #loginForm .btn-login {
+      background-color: #f1a310;
+      outline: 0;
+      width: 70%;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 10px; }
+      .login-container #loginForm .btn-login:hover {
+        background-color: #ad7307; }
+    .login-container #loginForm .btn-guest {
+      background-color: #636e72;
+      outline: 0;
+      width: 70%;
+      display: block;
+      margin: 0 auto; }
+      .login-container #loginForm .btn-guest:hover {
+        background-color: rgba(68, 75, 78, 0.98); }
+    .login-container #loginForm input[type=checkbox] {
+      height: 10px; }
+    .login-container #loginForm .btn-link {
+      color: #fff;
+      font-size: 90%;
+      font-style: italic;
+      margin-left: 70%;
+      text-align: right; }
+    .login-container #loginForm .remember-info-group {
+      line-height: 20px;
+      vertical-align: middle;
+      margin-top: 10px; }
+    .login-container #loginForm h4 {
+      display: block;
+      text-align: center;
+      font-size: 90%; }
+    .login-container #loginForm .btn-signup {
+      width: 70%;
+      display: block;
+      margin: 0 auto;
+      border: solid 1px #e9e9e9;
+      background-color: transparent;
+      color: #fff;
+      transition: all .3s; }
+      .login-container #loginForm .btn-signup:hover {
+        background-color: rgba(211, 211, 211, 0.342); }
 
-body {
-  background-color: #bbfa03; }
+/*#endregion */
