@@ -1,0 +1,66 @@
+﻿@model DOAN_WEB_NC.Models.ChiTietBangDiemMonHoc
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>ChiTietBangDiemMonHoc</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.BangDiemMonHoc.IDBangDiem)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.BangDiemMonHoc.IDBangDiem)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.HoSoHocSinh.HoTen)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.HoSoHocSinh.HoTen)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Diem15p)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Diem15p)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Diem1t)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Diem1t)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.DiemTB)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.DiemTB)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.IDChiTietBangDiemMonHoc }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
