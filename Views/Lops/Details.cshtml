@@ -1,0 +1,50 @@
+﻿@model DOAN_WEB_NC.Models.Lop
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Lop</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.SiSo)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.SiSo)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.SLDat)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.SLDat)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.TiLe)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.TiLe)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.IDLop }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

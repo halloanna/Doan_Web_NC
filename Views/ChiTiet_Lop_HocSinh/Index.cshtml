@@ -1,0 +1,59 @@
+﻿@model IEnumerable<DOAN_WEB_NC.Models.ChiTiet_Lop_HocSinh>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.HoSoHocSinh.HoTen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lop.IDLop)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TBHKI)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TBHKII)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.HoSoHocSinh.HoTen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Lop.IDLop)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TBHKI)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TBHKII)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.IDChiTiet_Lop_HocSinh }) |
+                @Html.ActionLink("Details", "Details", new { id=item.IDChiTiet_Lop_HocSinh }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.IDChiTiet_Lop_HocSinh })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

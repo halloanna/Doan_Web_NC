@@ -1,0 +1,58 @@
+﻿@model DOAN_WEB_NC.Models.ChiTiet_Lop_HocSinh
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>ChiTiet_Lop_HocSinh</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.HoSoHocSinh.HoTen)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.HoSoHocSinh.HoTen)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Lop.IDLop)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Lop.IDLop)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.TBHKI)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.TBHKI)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.TBHKII)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.TBHKII)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.IDChiTiet_Lop_HocSinh }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

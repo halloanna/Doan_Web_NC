@@ -142,7 +142,14 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BangDiemMonHocsController.cs" />
+    <Compile Include="Controllers\ChiTietBangDiemMonHocsController.cs" />
+    <Compile Include="Controllers\ChiTiet_Lop_HocSinhController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HoSoHocSinhsController.cs" />
+    <Compile Include="Controllers\LopsController.cs" />
+    <Compile Include="Controllers\MonHocsController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="DAL\SchoolContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -216,6 +223,41 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Users\Create.cshtml" />
+    <Content Include="Views\Users\Delete.cshtml" />
+    <Content Include="Views\Users\Details.cshtml" />
+    <Content Include="Views\Users\Edit.cshtml" />
+    <Content Include="Views\Users\Index.cshtml" />
+    <Content Include="Views\MonHocs\Create.cshtml" />
+    <Content Include="Views\MonHocs\Delete.cshtml" />
+    <Content Include="Views\MonHocs\Details.cshtml" />
+    <Content Include="Views\MonHocs\Edit.cshtml" />
+    <Content Include="Views\MonHocs\Index.cshtml" />
+    <Content Include="Views\ChiTietBangDiemMonHocs\Create.cshtml" />
+    <Content Include="Views\ChiTietBangDiemMonHocs\Delete.cshtml" />
+    <Content Include="Views\ChiTietBangDiemMonHocs\Details.cshtml" />
+    <Content Include="Views\ChiTietBangDiemMonHocs\Edit.cshtml" />
+    <Content Include="Views\ChiTietBangDiemMonHocs\Index.cshtml" />
+    <Content Include="Views\BangDiemMonHocs\Create.cshtml" />
+    <Content Include="Views\BangDiemMonHocs\Delete.cshtml" />
+    <Content Include="Views\BangDiemMonHocs\Details.cshtml" />
+    <Content Include="Views\BangDiemMonHocs\Edit.cshtml" />
+    <Content Include="Views\BangDiemMonHocs\Index.cshtml" />
+    <Content Include="Views\Lops\Create.cshtml" />
+    <Content Include="Views\Lops\Delete.cshtml" />
+    <Content Include="Views\Lops\Details.cshtml" />
+    <Content Include="Views\Lops\Edit.cshtml" />
+    <Content Include="Views\Lops\Index.cshtml" />
+    <Content Include="Views\HoSoHocSinhs\Create.cshtml" />
+    <Content Include="Views\HoSoHocSinhs\Delete.cshtml" />
+    <Content Include="Views\HoSoHocSinhs\Details.cshtml" />
+    <Content Include="Views\HoSoHocSinhs\Edit.cshtml" />
+    <Content Include="Views\HoSoHocSinhs\Index.cshtml" />
+    <Content Include="Views\ChiTiet_Lop_HocSinh\Create.cshtml" />
+    <Content Include="Views\ChiTiet_Lop_HocSinh\Delete.cshtml" />
+    <Content Include="Views\ChiTiet_Lop_HocSinh\Details.cshtml" />
+    <Content Include="Views\ChiTiet_Lop_HocSinh\Edit.cshtml" />
+    <Content Include="Views\ChiTiet_Lop_HocSinh\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
