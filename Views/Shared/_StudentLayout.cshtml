@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script src="~/Scripts/scripts.js" defer></script>
+</head>
+
+<body class="student-layout">
+    <header>
+        <nav>
+            <div class="navbar navbar-default">
+                <a href="#"><img class="navbar-brand" src="~/Content/images/lg.png" alt="#"></a>
+                <h2 class="school-name">papatoetoe high school</h2>
+                <ul class="nav navbar-nav">
+                    <li><a href="HomePage.html">Trang chủ</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="col-lg-2 col-md-6 col-sm-12">
+                <div class="team-info">
+                    <h3>complete by</h3>
+                    <ul class="list-member">
+                        <li><a href="#" class="btn-link">1 - Sử Hoàng Ân</a></li>
+                        <li><a href="http://fb.com/kai3089" class="btn-link">2 - Huỳnh Anh Kiệt</a></li>
+                        <li><a href="http://fb.com/100005531386995" class="btn-link">3 - Hồ Thị Ánh</a></li>
+                        <li><a href="#" class="btn-link">4 - Trần Hoài Siêng</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <h3>
+                    Gửi ý kiến của bạn cho chúng tôi
+                </h3>
+                <div class="feedback-form">
+                    <label class="control-label" for="email">Email</label>
+                    <input class="form-control" type="email" name="email" id="emailAddress">
+                    <label class="control-label" for="fullname">Họ tên</label>
+                    <input class="form-control" type="text" name="fullname" id="fullname">
+                    <label for="feedback-content" class="label-control">Nội dung</label>
+                    <textarea class="form-control" name="feedback-content" id="feedbackContent" cols="30" rows="10"></textarea>
+                    <div class="col-md-2 col-md-offset-9 col-sm-2 col-sm-offset-10">
+                        <button class="btn btn-primary" type="submit">Gửi</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <h3>trường trung học papatoetoe</h3>
+                <div class="contact-info">
+                    <p>155 Sư Vạn Hạnh (nối dài) P13 Q10 TPHCM</p>
+                    <p>Số điện thoại: 0123 456 789</p>
+                    <p>Email: contact@papatoetoe.edu.vn</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe width="488" height="337" id="gmap_canvas" src="https://maps.google.com/maps?q=155%20Su%20Van%20Hanh&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <a href="https://www.crocothemes.net"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="footer-bottom">
+            <div class="container">
+                <span> Copyright &copy; 2015 ABC DEF GHI KLM :)</span>
+            </div>
+        </div> -->
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+
+</html>
