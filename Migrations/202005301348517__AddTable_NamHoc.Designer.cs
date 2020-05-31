@@ -7,13 +7,13 @@ namespace DOAN_WEB_NC.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.0")]
-    public sealed partial class _createNewDB : IMigrationMetadata
+    public sealed partial class _AddTable_NamHoc : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(_createNewDB));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(_AddTable_NamHoc));
         
         string IMigrationMetadata.Id
         {
-            get { return "202005281438162__createNewDB"; }
+            get { return "202005301348517__AddTable_NamHoc"; }
         }
         
         string IMigrationMetadata.Source

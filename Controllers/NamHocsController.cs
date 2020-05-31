@@ -11,107 +11,107 @@ using DOAN_WEB_NC.Models;
 
 namespace DOAN_WEB_NC.Controllers
 {
-    public class HoSoHocSinhsController : Controller
+    public class NamHocsController : Controller
     {
         private SchoolContext db = new SchoolContext();
 
-        // GET: HoSoHocSinhs
+        // GET: NamHocs
         public ActionResult Index()
         {
-            return View(db.HoSoHocSinhs.ToList());
+            return View(db.NamHocs.ToList());
         }
 
-        // GET: HoSoHocSinhs/Details/5
+        // GET: NamHocs/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            HoSoHocSinh hoSoHocSinh = db.HoSoHocSinhs.Find(id);
-            if (hoSoHocSinh == null)
+            NamHoc namHoc = db.NamHocs.Find(id);
+            if (namHoc == null)
             {
                 return HttpNotFound();
             }
-            return View(hoSoHocSinh);
+            return View(namHoc);
         }
 
-        // GET: HoSoHocSinhs/Create
+        // GET: NamHocs/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: HoSoHocSinhs/Create
+        // POST: NamHocs/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "IDHocSinh,HoTen,GioiTinh,Image,NgaySinh,DiaChi,Email")] HoSoHocSinh hoSoHocSinh)
+        public ActionResult Create([Bind(Include = "IDNamHoc,NamBD,NamKT,HocKy")] NamHoc namHoc)
         {
             if (ModelState.IsValid)
             {
-                db.HoSoHocSinhs.Add(hoSoHocSinh);
+                db.NamHocs.Add(namHoc);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(hoSoHocSinh);
+            return View(namHoc);
         }
 
-        // GET: HoSoHocSinhs/Edit/5
+        // GET: NamHocs/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            HoSoHocSinh hoSoHocSinh = db.HoSoHocSinhs.Find(id);
-            if (hoSoHocSinh == null)
+            NamHoc namHoc = db.NamHocs.Find(id);
+            if (namHoc == null)
             {
                 return HttpNotFound();
             }
-            return View(hoSoHocSinh);
+            return View(namHoc);
         }
 
-        // POST: HoSoHocSinhs/Edit/5
+        // POST: NamHocs/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "IDHocSinh,HoTen,GioiTinh,Image,NgaySinh,DiaChi,Email")] HoSoHocSinh hoSoHocSinh)
+        public ActionResult Edit([Bind(Include = "IDNamHoc,NamBD,NamKT,HocKy")] NamHoc namHoc)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(hoSoHocSinh).State = EntityState.Modified;
+                db.Entry(namHoc).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(hoSoHocSinh);
+            return View(namHoc);
         }
 
-        // GET: HoSoHocSinhs/Delete/5
+        // GET: NamHocs/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            HoSoHocSinh hoSoHocSinh = db.HoSoHocSinhs.Find(id);
-            if (hoSoHocSinh == null)
+            NamHoc namHoc = db.NamHocs.Find(id);
+            if (namHoc == null)
             {
                 return HttpNotFound();
             }
-            return View(hoSoHocSinh);
+            return View(namHoc);
         }
 
-        // POST: HoSoHocSinhs/Delete/5
+        // POST: NamHocs/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            HoSoHocSinh hoSoHocSinh = db.HoSoHocSinhs.Find(id);
-            db.HoSoHocSinhs.Remove(hoSoHocSinh);
+            NamHoc namHoc = db.NamHocs.Find(id);
+            db.NamHocs.Remove(namHoc);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
@@ -123,14 +123,6 @@ namespace DOAN_WEB_NC.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
-        }
-        public ActionResult Login()
-        {
-            return View();
-        }
-        public ActionResult StudentView()
-        {
-            return View();
         }
     }
 }

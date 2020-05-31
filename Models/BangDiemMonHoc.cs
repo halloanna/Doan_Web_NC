@@ -21,7 +21,9 @@ namespace DOAN_WEB_NC.Models
         [ForeignKey("Lop")]
         public int IDLop { get; set; }
         public Lop Lop { get; set; }
-
+        [ForeignKey("NamHoc")]
+        public int IDNamHoc { get; set; }
+        public NamHoc NamHoc { get; set; }
         public ICollection<ChiTietBangDiemMonHoc> ChiTietBangDiemMonHocs { get; set; }
     }
 }

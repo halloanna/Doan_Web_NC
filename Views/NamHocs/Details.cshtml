@@ -1,0 +1,43 @@
+﻿@model DOAN_WEB_NC.Models.NamHoc
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_StudentLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>NamHoc</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NamBD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NamBD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NamKT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NamKT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HocKy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HocKy)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IDNamHoc }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

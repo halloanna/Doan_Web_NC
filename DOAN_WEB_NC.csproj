@@ -149,14 +149,19 @@
     <Compile Include="Controllers\HoSoHocSinhsController.cs" />
     <Compile Include="Controllers\LopsController.cs" />
     <Compile Include="Controllers\MonHocsController.cs" />
+    <Compile Include="Controllers\NamHocsController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="DAL\SchoolContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202005281438162__createNewDB.cs" />
-    <Compile Include="Migrations\202005281438162__createNewDB.designer.cs">
-      <DependentUpon>202005281438162__createNewDB.cs</DependentUpon>
+    <Compile Include="Migrations\202005301312382_ThemCotDiemThi_BangChiTietDiem.cs" />
+    <Compile Include="Migrations\202005301312382_ThemCotDiemThi_BangChiTietDiem.designer.cs">
+      <DependentUpon>202005301312382_ThemCotDiemThi_BangChiTietDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005301348517__AddTable_NamHoc.cs" />
+    <Compile Include="Migrations\202005301348517__AddTable_NamHoc.designer.cs">
+      <DependentUpon>202005301348517__AddTable_NamHoc.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\BangDiemMonHoc.cs" />
@@ -165,6 +170,7 @@
     <Compile Include="Models\HoSoHocSinh.cs" />
     <Compile Include="Models\Lop.cs" />
     <Compile Include="Models\MonHoc.cs" />
+    <Compile Include="Models\NamHoc.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -175,6 +181,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\images\bg.jpg" />
     <Content Include="Content\images\lg.png" />
+    <Content Include="Content\images\student-img.png" />
     <Content Include="Content\reponsive.css">
       <DependentUpon>reponsive.scss</DependentUpon>
     </Content>
@@ -258,10 +265,17 @@
     <Content Include="Views\ChiTiet_Lop_HocSinh\Details.cshtml" />
     <Content Include="Views\ChiTiet_Lop_HocSinh\Edit.cshtml" />
     <Content Include="Views\ChiTiet_Lop_HocSinh\Index.cshtml" />
+    <Content Include="Views\Shared\_StudentLayout.cshtml" />
+    <Content Include="Views\NamHocs\Create.cshtml" />
+    <Content Include="Views\NamHocs\Delete.cshtml" />
+    <Content Include="Views\NamHocs\Details.cshtml" />
+    <Content Include="Views\NamHocs\Edit.cshtml" />
+    <Content Include="Views\NamHocs\Index.cshtml" />
+    <Content Include="Views\HoSoHocSinhs\Login.cshtml" />
+    <Content Include="Views\HoSoHocSinhs\StudentView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\User\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -277,8 +291,11 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202005281438162__createNewDB.resx">
-      <DependentUpon>202005281438162__createNewDB.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202005301312382_ThemCotDiemThi_BangChiTietDiem.resx">
+      <DependentUpon>202005301312382_ThemCotDiemThi_BangChiTietDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005301348517__AddTable_NamHoc.resx">
+      <DependentUpon>202005301348517__AddTable_NamHoc.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

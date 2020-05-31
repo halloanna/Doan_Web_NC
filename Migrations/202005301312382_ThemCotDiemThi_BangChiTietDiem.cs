@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class _createNewDB : DbMigration
+    public partial class ThemCotDiemThi_BangChiTietDiem : DbMigration
     {
         public override void Up()
         {
@@ -30,6 +30,7 @@
                         IDHocSinh = c.Int(nullable: false),
                         Diem15p = c.Single(nullable: false),
                         Diem1t = c.Single(nullable: false),
+                        DiemThi = c.Single(nullable: false),
                         DiemTB = c.Single(nullable: false),
                     })
                 .PrimaryKey(t => t.IDChiTietBangDiemMonHoc)

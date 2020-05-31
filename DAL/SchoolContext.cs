@@ -19,6 +19,7 @@ namespace DOAN_WEB_NC.DAL
         public DbSet<MonHoc> MonHocs { get; set; }
         public DbSet<BangDiemMonHoc> BangDiemMonHocs { get; set; }
         public DbSet<ChiTietBangDiemMonHoc> ChiTietBangDiemMonHocs { get; set; }
+        public DbSet<NamHoc> NamHocs { get; set; }
 
     }
 }

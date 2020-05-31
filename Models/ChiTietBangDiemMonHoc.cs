@@ -21,6 +21,7 @@ namespace DOAN_WEB_NC.Models
         public HoSoHocSinh HoSoHocSinh { get; set; }
         public float Diem15p { get; set; }
         public float Diem1t { get; set; }
+        public float DiemThi { get; set; }
         public float DiemTB { get; set; }
     }
 }

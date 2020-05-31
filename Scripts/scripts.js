@@ -1,29 +1,14 @@
-﻿
+﻿function openStudentTab(evt, tabName) {
+    var i, tabcontent, tablinks;
 
-//----------------------------------------------
-//---------------MODAL-LOGIN--------------------
-//----------------------------------------------
-
-//Lay id modal
-var modal = document.getElementById("myModal");
-//lay btn open modal
-var btn = document.getElementById("viewModal");
-//
-var span = document.getElementsByClassName("close")[0];
-//
-var cancelBtn = document.getElementById("cancelBtn");
-
-btn.onclick = function () {
-    modal.style.display = "block";
-}
-span.onclick = function () {
-    modal.style.display = "none";
-}
-function cancel(Button) {
-    modal.style.display = "none";
-}
-window.onclick = function (event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
     }
+    tablinks = document.getElementsByClassName("tablinks")
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace("active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
 }
