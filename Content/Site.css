@@ -76,6 +76,9 @@ header {
           transition: all .3s; }
         header .navbar-default .navbar-nav li:hover::after, header .navbar-default .nav-default li:hover::after {
           width: 110%; }
+      @media screen and (max-width: 530px) {
+        header .navbar-default .navbar-nav, header .navbar-default .nav-default {
+          padding-right: 0 !important; } }
 
 main {
   height: 100%;
@@ -92,8 +95,7 @@ footer {
   background-image: linear-gradient(88.7deg, #0f78a1 -17.1%, #2892c4 40.4%, #5023b1 115.3%);
   color: #fff; }
   footer h3 {
-    font-weight: 300;
-    text-transform: capitalize;
+    font-weight: 600;
     font-size: 26px; }
   footer p {
     line-height: 25px; }
@@ -264,6 +266,9 @@ table {
       margin: 0 auto; }
       .login-container #loginForm .btn-guest:hover {
         background-color: rgba(68, 75, 78, 0.98); }
+    @media screen and (max-width: 530px) {
+      .login-container #loginForm .btn-guest, .login-container #loginForm .btn-login {
+        width: 250px; } }
     .login-container #loginForm input[type=checkbox] {
       height: 10px; }
     .login-container #loginForm .forgot-password {
@@ -280,6 +285,13 @@ table {
       display: block;
       text-align: center;
       font-size: 90%; }
+    @media screen and (max-width: 530px) {
+      .login-container #loginForm {
+        margin-left: 0 !important;
+        width: auto; } }
+  @media screen and (max-width: 530px) {
+    .login-container {
+      height: 45vh; } }
 
 .student-container .show-menu-btn,
 .student-container .hide-menu-btn {
@@ -409,6 +421,9 @@ table {
       border: 1px solid rgba(168, 213, 226, 0.781);
       outline: none;
       box-shadow: 0 0px 3px #7fcbf7; }
+    @media screen and (max-width: 530px) {
+      .get-studentid input[type=text] {
+        width: 300px; } }
   .get-studentid .btn-guest {
     background-color: #636e72;
     color: #fff;

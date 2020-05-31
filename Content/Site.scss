@@ -100,6 +100,9 @@ header {
                     width: 110%;
                 }
             }
+            @media screen and (max-width:530px){
+                padding-right:0 !important;
+            }
         }
     }
 }
@@ -121,8 +124,8 @@ footer {
     color: #fff;
 
     h3 {
-        font-weight: 300;
-        text-transform: capitalize;
+        font-weight: 600;
+    
         font-size: 26px;
     }
 
@@ -351,7 +354,6 @@ table {
 
         .btn-login {
             background-color: #f1a310;
-            ;
             outline: 0;
             width: 70%;
             display: block;
@@ -364,6 +366,8 @@ table {
             }
         }
 
+
+
         .btn-guest {
             background-color: #636e72;
             outline: 0;
@@ -373,6 +377,13 @@ table {
 
             &:hover {
                 background-color: rgba(68, 75, 78, 0.98);
+            }
+        }
+
+        @media screen and (max-width:530px) {
+
+            .btn-guest, .btn-login {
+                width: 250px;
             }
         }
 
@@ -401,6 +412,16 @@ table {
             text-align: center;
             font-size: 90%;
         }
+
+        @media screen and (max-width:530px) {
+            margin-left: 0 !important;
+            width: auto;
+        }
+    }
+
+    @media screen and (max-width:530px) {
+
+      height:45vh;
     }
 }
 
@@ -601,6 +622,9 @@ table {
             outline: none;
             box-shadow: 0 0px 3px rgb(127, 203, 247);
         }
+       @media screen and (max-width:530px){
+           width:300px;
+       }
     }
 
     .btn-guest {

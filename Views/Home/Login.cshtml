@@ -44,15 +44,15 @@
                         <input class="form-control" type="password" name="password" id="password">
                         <div class="remember-info-group">
                             <input type="checkbox" name="rememberMe" id="rememberMe">
-                            <label for="rememberMe">Remember Me</label>
+                            <label for="rememberMe">Ghi nhớ tôi</label>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-6 col-sm-5 col-md-offset-5 col-sm-offset-7 col-lg-offset-7 forgot-password">
-                    <a href="#" class="btn-link">Quên mật khẩu?</a>
+                    <a href="#" class="btn-link"><u>Quên mật khẩu?</u></a>
                 </div>  
                 <button href="#" class="btn btn-primary btn-login">Đăng nhập</button>
-                <button @Html.Action("HoSoHocSinhs","Login") class="btn btn-primary btn-guest">Học sinh đăng nhập</button>
+                <button @*@Html.Action("HoSoHocSinhs","Login")*@ class="btn btn-primary btn-guest">Học sinh đăng nhập</button>
             </form>
         </div>
     </div>
