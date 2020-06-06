@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_StudentLayout.cshtml";
+}
+<div class="student-container container-fluid">
+    <div class="row">
+        <div class="col-xl-4 col-md-4">
+            <input type="checkbox" id="check">
+            <label for="check" class="show-menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <div class="student-card">
+                <label for="check" class="hide-menu-btn">
+                    <i class="fas fa-times"></i>
+                </label>
+                <div class="student-img">
+                    <img src="../Content/images/student-img.png" alt="#">
+                </div>
+                <h4>huỳnh anh kiệt</h4>
+                <ul id=student-menu>
+                    <li><button class="tablinks active" onclick="openStudentTab(event, 'XemThongTin')">Xem Thông Tin</button></li>
+                    <li><button class="tablinks" onclick="openStudentTab(event, 'XemDiem')">Xem điểm</button></li>
+                    <li><button class="tablinks" onclick="openStudentTab(event, 'XemTKB')">Xem TKB</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

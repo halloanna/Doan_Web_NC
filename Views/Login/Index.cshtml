@@ -1,0 +1,61 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script src="~/Scripts/scripts.js" defer></script>
+</head>
+<body class="login-container">
+    <div class="container-xl">
+        <div class="row" style="height:100%">
+            <div class=" col-lg-6 scol-md-12 col-sm-12 col-12  align-self-center">
+                <div class="school-content">
+                    <h3>welcome to</h3>
+                    <h1>papatoetoe</h1>
+                    <span class="sub-h1">
+                        high school
+                    </span>
+                </div>
+            </div>     
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12 align-self-center">
+                <form action="#" method="GET" id="loginForm" class="form-horizontal">
+                    <h3>đăng nhập</h3>
+                    <div class="form-group">
+                        <div class="control-label    col-md-12 col-sm-12">
+                            <label for="username">Tên đăng nhập</label>
+                        </div>
+                        <div class="control-label col-lg-8 con-md-8 col-sm-12">
+                            <input class="form-control" type="text" name="username" id="username">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="control-label col-lg-4 col-md-12 col-sm-12">
+                            <label for="password">Mật khẩu</label>
+                        </div>
+                        <div class="control-label col-lg-8 con-md-8 col-sm-12">
+                            <input class="form-control" type="password" name="password" id="password">
+                            <div class="remember-info-group">
+                                <input type="checkbox" name="rememberMe" id="rememberMe">
+                                <label for="rememberMe">Ghi nhớ tôi</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6 col-sm-5 col-md-offset-5 col-sm-offset-7 col-lg-offset-7 forgot-password">
+                        <a href="#" class="btn-link"><u>Quên mật khẩu?</u></a>
+                    </div>
+                    <button href="#" class="btn btn-primary btn-login">Đăng nhập</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

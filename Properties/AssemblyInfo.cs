@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("DOAN_WEB_NC")]
+[assembly: AssemblyTitle("DOAN_WEBNC")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("DOAN_WEB_NC")]
+[assembly: AssemblyProduct("DOAN_WEBNC")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("99504585-e13f-4cba-9b94-491190218cfc")]
+[assembly: Guid("386dbfce-7602-48e8-a365-9c84c0608e89")]
 
 // Version information for an assembly consists of the following four values:
 //
