@@ -142,7 +142,14 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BangDiemMonHocsController.cs" />
+    <Compile Include="Controllers\ChiTietBangDiemMonHocsController.cs" />
+    <Compile Include="Controllers\ChiTiet_Lop_HocSinhController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HoSoHocSinhsController.cs" />
+    <Compile Include="Controllers\LopsController.cs" />
+    <Compile Include="Controllers\MonHocsController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="DAL\SchoolContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -219,6 +226,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\BangDiemMonHocs\" />
+    <Folder Include="Views\ChiTietBangDiemMonHocs\" />
+    <Folder Include="Views\ChiTiet_Lop_HocSinh\" />
+    <Folder Include="Views\HoSoHocSinhs\" />
+    <Folder Include="Views\Lops\" />
+    <Folder Include="Views\MonHocs\" />
+    <Folder Include="Views\Users\" />
     <Folder Include="Views\User\" />
   </ItemGroup>
   <ItemGroup>
